@@ -20,6 +20,7 @@
             "outputPath": "dist/viet-profile",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "baseHref": "https://github.com/vietpham2310/viet-profile-page",
             "polyfills": [
               "zone.js"
             ],
@@ -67,7 +68,7 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "viet-profile:build:production"
+              "buildTarget": "viet-profile:build:production",
             },
             "development": {
               "buildTarget": "viet-profile:build:development"

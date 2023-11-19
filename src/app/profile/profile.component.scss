@@ -59,27 +59,38 @@
   }
 
   .center-wrapper {
-    margin-left: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    // height: 100vh; // Adjust as needed
   }
   
   .tech-stacks {
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px; // Adjust as needed for spacing between content boxes
   }
   
   .content-box {
-    width: 120px;
-    border-radius: 8px;
-    margin-bottom: 70px;
-    border: 0.1px solid #ccc;
+    flex: 1;
+    min-width: 100px; // Set a minimum width for content boxes
+    border: 1px solid #ffffff; // Add a border
+    padding: 10px; // Add padding for better appearance
+    text-align: center;
+  }
+  
+  
+  .content-box {
+    // width: 120px;
+    // border-radius: 8px;
+    margin-bottom: 30px;
+    // border: 0.1px solid #ccc;
     padding: 10px;
     margin-right: 30px;
     font-size: 1.0em;
     color: #bbb;
     padding-top: 20px;
-    text-align: center;
+    // text-align: center;
     font-family: 'IBM Plex Mono', monospace;
   }
   

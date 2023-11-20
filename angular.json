@@ -20,7 +20,7 @@
             "outputPath": "dist/viet-profile",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "baseHref": "/viet-profile-page",
+            "baseHref": "",
             "polyfills": [
               "zone.js"
             ],

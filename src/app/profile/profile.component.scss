@@ -62,7 +62,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // height: 100vh; // Adjust as needed
   }
   
   .tech-stacks {
@@ -77,21 +76,21 @@
     border: 1px solid #ffffff; // Add a border
     padding: 10px; // Add padding for better appearance
     text-align: center;
-  }
   
-  
-  .content-box {
-    // width: 120px;
-    // border-radius: 8px;
+    // Additional styling
     margin-bottom: 30px;
-    // border: 0.1px solid #ccc;
-    padding: 10px;
-    margin-right: 30px;
     font-size: 1.0em;
     color: #bbb;
     padding-top: 20px;
-    // text-align: center;
     font-family: 'IBM Plex Mono', monospace;
   }
+  
+  // Responsive styles using Bootstrap classes
+  @media (max-width: 768px) {
+    .content-box {
+      margin-right: 0; // Remove right margin on smaller screens
+    }
+  }
+  
   
 }

@@ -217,6 +217,7 @@
       vertical-align: middle
     }
 
+    .container,
     .container-fluid {
       --bs-gutter-x: 1.5rem;
       --bs-gutter-y: 0;
@@ -225,6 +226,36 @@
       padding-left: calc(var(--bs-gutter-x) * .5);
       margin-right: auto;
       margin-left: auto
+    }
+
+    @media (min-width:576px) {
+      .container {
+        max-width: 540px
+      }
+    }
+
+    @media (min-width:768px) {
+      .container {
+        max-width: 720px
+      }
+    }
+
+    @media (min-width:992px) {
+      .container {
+        max-width: 960px
+      }
+    }
+
+    @media (min-width:1200px) {
+      .container {
+        max-width: 1140px
+      }
+    }
+
+    @media (min-width:1400px) {
+      .container {
+        max-width: 1320px
+      }
     }
 
     :root {
@@ -256,17 +287,34 @@
     }
 
     @media (min-width:768px) {
+      .col-md-3 {
+        flex: 0 0 auto;
+        width: 25%
+      }
+
       .col-md-6 {
         flex: 0 0 auto;
         width: 50%
       }
+    }
+
+    .d-flex {
+      display: flex !important
+    }
+
+    .justify-content-end {
+      justify-content: flex-end !important
+    }
+
+    .justify-content-center {
+      justify-content: center !important
     }
   </style>
   <link rel="stylesheet" href="styles-ERRLHU2V.css" media="print" onload="this.media='all'"><noscript>
     <link rel="stylesheet" href="styles-ERRLHU2V.css">
   </noscript>
   <style ng-app-id="ng">
-    .main-header[_ngcontent-ng-c1044305466] {
+    .main-header[_ngcontent-ng-c1481849533] {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -275,71 +323,96 @@
       color: #fff
     }
 
-    .main-header[_ngcontent-ng-c1044305466] .logo[_ngcontent-ng-c1044305466] img[_ngcontent-ng-c1044305466] {
+    .main-header[_ngcontent-ng-c1481849533] .logo[_ngcontent-ng-c1481849533] img[_ngcontent-ng-c1481849533] {
       margin-left: 50px;
-      width: 200px;
-      height: 100px;
+      width: 100%;
+      height: auto;
+      max-width: 200px;
+      max-height: 100px;
       object-fit: cover;
-      margin-bottom: 20px;
-      max-height: 500px
+      margin-bottom: 20px
     }
 
-    .main-header[_ngcontent-ng-c1044305466] .nav-menu[_ngcontent-ng-c1044305466] ul[_ngcontent-ng-c1044305466] {
+    .main-header[_ngcontent-ng-c1481849533] .nav-menu[_ngcontent-ng-c1481849533] ul[_ngcontent-ng-c1481849533] {
       list-style: none;
-      display: flex
+      display: flex;
+      margin: 0
     }
 
-    .main-header[_ngcontent-ng-c1044305466] .nav-menu[_ngcontent-ng-c1044305466] ul[_ngcontent-ng-c1044305466] li[_ngcontent-ng-c1044305466] {
+    .main-header[_ngcontent-ng-c1481849533] .nav-menu[_ngcontent-ng-c1481849533] ul[_ngcontent-ng-c1481849533] li[_ngcontent-ng-c1481849533] {
       margin-right: 20px
     }
 
-    .main-header[_ngcontent-ng-c1044305466] .nav-menu[_ngcontent-ng-c1044305466] ul[_ngcontent-ng-c1044305466] li[_ngcontent-ng-c1044305466] a[_ngcontent-ng-c1044305466] {
+    .main-header[_ngcontent-ng-c1481849533] .nav-menu[_ngcontent-ng-c1481849533] ul[_ngcontent-ng-c1481849533] li[_ngcontent-ng-c1481849533] a[_ngcontent-ng-c1481849533] {
       text-decoration: none;
       color: #fff;
       font-weight: 700
     }
 
-    .main-header[_ngcontent-ng-c1044305466] .nav-menu[_ngcontent-ng-c1044305466] ul[_ngcontent-ng-c1044305466] li[_ngcontent-ng-c1044305466] a[_ngcontent-ng-c1044305466]:hover {
+    .main-header[_ngcontent-ng-c1481849533] .nav-menu[_ngcontent-ng-c1481849533] ul[_ngcontent-ng-c1481849533] li[_ngcontent-ng-c1481849533] a[_ngcontent-ng-c1481849533]:hover {
       text-decoration: underline
+    }
+
+    @media (max-width: 768px) {
+      .main-header[_ngcontent-ng-c1481849533] {
+        flex-direction: column
+      }
+
+      .main-header[_ngcontent-ng-c1481849533] .logo-section[_ngcontent-ng-c1481849533],
+      .main-header[_ngcontent-ng-c1481849533] .center-control-buttons[_ngcontent-ng-c1481849533],
+      .main-header[_ngcontent-ng-c1481849533] .profile-section[_ngcontent-ng-c1481849533] {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px
+      }
+
+      .main-header[_ngcontent-ng-c1481849533] .nav-menu[_ngcontent-ng-c1481849533] ul[_ngcontent-ng-c1481849533] {
+        flex-direction: column
+      }
+
+      .main-header[_ngcontent-ng-c1481849533] .nav-menu[_ngcontent-ng-c1481849533] ul[_ngcontent-ng-c1481849533] li[_ngcontent-ng-c1481849533] {
+        margin-right: 0;
+        margin-bottom: 10px
+      }
     }
   </style>
   <style ng-app-id="ng">
-    .profile-section[_ngcontent-ng-c3358521680] {
+    .profile-section[_ngcontent-ng-c3119447237] {
       background-color: #000
     }
 
-    .profile-section[_ngcontent-ng-c3358521680] .section-1[_ngcontent-ng-c3358521680],
-    .profile-section[_ngcontent-ng-c3358521680] .section-2[_ngcontent-ng-c3358521680] {
+    .profile-section[_ngcontent-ng-c3119447237] .section-1[_ngcontent-ng-c3119447237],
+    .profile-section[_ngcontent-ng-c3119447237] .section-2[_ngcontent-ng-c3119447237] {
       padding: 20px;
       text-align: center
     }
 
-    .profile-section[_ngcontent-ng-c3358521680] .section-1[_ngcontent-ng-c3358521680] {
+    .profile-section[_ngcontent-ng-c3119447237] .section-1[_ngcontent-ng-c3119447237] {
       font-family: IBM Plex Mono, monospace;
       color: #fff;
       margin-top: 130px
     }
 
-    .profile-section[_ngcontent-ng-c3358521680] .section-1[_ngcontent-ng-c3358521680] .profile-header[_ngcontent-ng-c3358521680] {
+    .profile-section[_ngcontent-ng-c3119447237] .section-1[_ngcontent-ng-c3119447237] .profile-header[_ngcontent-ng-c3119447237] {
       margin-bottom: 10px
     }
 
-    .profile-section[_ngcontent-ng-c3358521680] .section-1[_ngcontent-ng-c3358521680] .profile-header[_ngcontent-ng-c3358521680] h1[_ngcontent-ng-c3358521680] {
+    .profile-section[_ngcontent-ng-c3119447237] .section-1[_ngcontent-ng-c3119447237] .profile-header[_ngcontent-ng-c3119447237] h1[_ngcontent-ng-c3119447237] {
       font-family: IBM Plex Mono, monospace;
       font-size: 2em
     }
 
-    .profile-section[_ngcontent-ng-c3358521680] .section-1[_ngcontent-ng-c3358521680] .profile-header[_ngcontent-ng-c3358521680] p[_ngcontent-ng-c3358521680] {
+    .profile-section[_ngcontent-ng-c3119447237] .section-1[_ngcontent-ng-c3119447237] .profile-header[_ngcontent-ng-c3119447237] p[_ngcontent-ng-c3119447237] {
       font-size: 1.5em;
       color: #999
     }
 
-    .profile-section[_ngcontent-ng-c3358521680] .section-1[_ngcontent-ng-c3358521680] .profile-content[_ngcontent-ng-c3358521680] p[_ngcontent-ng-c3358521680] {
+    .profile-section[_ngcontent-ng-c3119447237] .section-1[_ngcontent-ng-c3119447237] .profile-content[_ngcontent-ng-c3119447237] p[_ngcontent-ng-c3119447237] {
       font-size: 1.2em;
       color: #bbb
     }
 
-    .profile-section[_ngcontent-ng-c3358521680] .section-2[_ngcontent-ng-c3358521680] .profile-image[_ngcontent-ng-c3358521680] img[_ngcontent-ng-c3358521680] {
+    .profile-section[_ngcontent-ng-c3119447237] .section-2[_ngcontent-ng-c3119447237] .profile-image[_ngcontent-ng-c3119447237] img[_ngcontent-ng-c3119447237] {
       border-radius: 50%;
       width: 70%;
       height: 70%;
@@ -347,31 +420,31 @@
       margin-bottom: 20px
     }
 
-    .profile-section[_ngcontent-ng-c3358521680] .worked-with[_ngcontent-ng-c3358521680] {
+    .profile-section[_ngcontent-ng-c3119447237] .worked-with[_ngcontent-ng-c3119447237] {
       padding: 20px;
       text-align: center;
       color: #fff;
       font-family: IBM Plex Mono, monospace
     }
 
-    .profile-section[_ngcontent-ng-c3358521680] .worked-with[_ngcontent-ng-c3358521680] h2[_ngcontent-ng-c3358521680] {
+    .profile-section[_ngcontent-ng-c3119447237] .worked-with[_ngcontent-ng-c3119447237] h2[_ngcontent-ng-c3119447237] {
       font-size: 1.5em;
       margin-bottom: 10px
     }
 
-    .profile-section[_ngcontent-ng-c3358521680] .center-wrapper[_ngcontent-ng-c3358521680] {
+    .profile-section[_ngcontent-ng-c3119447237] .center-wrapper[_ngcontent-ng-c3119447237] {
       display: flex;
       justify-content: center;
       align-items: center
     }
 
-    .profile-section[_ngcontent-ng-c3358521680] .tech-stacks[_ngcontent-ng-c3358521680] {
+    .profile-section[_ngcontent-ng-c3119447237] .tech-stacks[_ngcontent-ng-c3119447237] {
       display: flex;
       flex-wrap: wrap;
       gap: 10px
     }
 
-    .profile-section[_ngcontent-ng-c3358521680] .content-box[_ngcontent-ng-c3358521680] {
+    .profile-section[_ngcontent-ng-c3119447237] .content-box[_ngcontent-ng-c3119447237] {
       flex: 1;
       min-width: 100px;
       border: 1px solid #ffffff;
@@ -379,7 +452,7 @@
       text-align: center
     }
 
-    .profile-section[_ngcontent-ng-c3358521680] .content-box[_ngcontent-ng-c3358521680] {
+    .profile-section[_ngcontent-ng-c3119447237] .content-box[_ngcontent-ng-c3119447237] {
       margin-bottom: 30px;
       padding: 20px 10px 10px;
       margin-right: 30px;
@@ -392,100 +465,100 @@
 
 <body><!--nghm-->
   <app-root _nghost-ng-c582792440 ng-version="17.0.3" ngh="1" ng-server-context="ssg"><router-outlet
-      _ngcontent-ng-c582792440><app-header _ngcontent-ng-c582792440 _nghost-ng-c1044305466 ngh="0">
-        <header _ngcontent-ng-c1044305466 class="main-header">
-          <div _ngcontent-ng-c1044305466 class="logo-section">
-            <div _ngcontent-ng-c1044305466 class="logo"><img _ngcontent-ng-c1044305466 src="./assets/logo.jpeg"
+      _ngcontent-ng-c582792440><app-header _ngcontent-ng-c582792440 _nghost-ng-c1481849533 ngh="0">
+        <header _ngcontent-ng-c1481849533 class="main-header container-fluid">
+          <div _ngcontent-ng-c1481849533 class="logo-section col-md-3">
+            <div _ngcontent-ng-c1481849533 class="logo"><img _ngcontent-ng-c1481849533 src="./assets/logo.jpeg"
                 alt="vietpham's logo"></div>
           </div>
-          <div _ngcontent-ng-c1044305466 class="center-control-buttons">
-            <nav _ngcontent-ng-c1044305466 class="nav-menu">
-              <ul _ngcontent-ng-c1044305466>
-                <li _ngcontent-ng-c1044305466><a _ngcontent-ng-c1044305466 routerlink="/">About</a></li>
-                <li _ngcontent-ng-c1044305466><a _ngcontent-ng-c1044305466 routerlink="/">Journey</a></li>
-                <li _ngcontent-ng-c1044305466><a _ngcontent-ng-c1044305466 routerlink="/">Works</a></li>
-                <li _ngcontent-ng-c1044305466><a _ngcontent-ng-c1044305466 routerlink="/">Blog</a></li>
+          <div _ngcontent-ng-c1481849533 class="center-control-buttons col-md-6">
+            <nav _ngcontent-ng-c1481849533 class="nav-menu">
+              <ul _ngcontent-ng-c1481849533 class="d-flex justify-content-center">
+                <li _ngcontent-ng-c1481849533><a _ngcontent-ng-c1481849533 routerlink="/">About</a></li>
+                <li _ngcontent-ng-c1481849533><a _ngcontent-ng-c1481849533 routerlink="/">Journey</a></li>
+                <li _ngcontent-ng-c1481849533><a _ngcontent-ng-c1481849533 routerlink="/">Works</a></li>
+                <li _ngcontent-ng-c1481849533><a _ngcontent-ng-c1481849533 routerlink="/">Blog</a></li>
               </ul>
             </nav>
           </div>
-          <div _ngcontent-ng-c1044305466 class="profile-sectio">
-            <nav _ngcontent-ng-c1044305466 class="nav-menu">
-              <ul _ngcontent-ng-c1044305466>
-                <li _ngcontent-ng-c1044305466><a _ngcontent-ng-c1044305466
+          <div _ngcontent-ng-c1481849533 class="profile-section col-md-3">
+            <nav _ngcontent-ng-c1481849533 class="nav-menu">
+              <ul _ngcontent-ng-c1481849533 class="d-flex justify-content-end">
+                <li _ngcontent-ng-c1481849533><a _ngcontent-ng-c1481849533
                     href="https://github.com/vietpham2310">Github</a></li>
-                <li _ngcontent-ng-c1044305466><a _ngcontent-ng-c1044305466
+                <li _ngcontent-ng-c1481849533><a _ngcontent-ng-c1481849533
                     href="https://www.facebook.com/vietpham102301/">Facebook</a></li>
-                <li _ngcontent-ng-c1044305466><a _ngcontent-ng-c1044305466
+                <li _ngcontent-ng-c1481849533><a _ngcontent-ng-c1481849533
                     href="https://www.youtube.com/channel/UC4W1t2M53mDZZF4ewDXRxIA">Youtube</a></li>
-                <li _ngcontent-ng-c1044305466><a _ngcontent-ng-c1044305466
+                <li _ngcontent-ng-c1481849533><a _ngcontent-ng-c1481849533
                     href="https://www.instagram.com/vietpham1023/">Instagram</a></li>
-                <li _ngcontent-ng-c1044305466><a _ngcontent-ng-c1044305466
+                <li _ngcontent-ng-c1481849533><a _ngcontent-ng-c1481849533
                     href="https://www.tiktok.com/@vietpham1023">Tiktok</a></li>
               </ul>
             </nav>
           </div>
         </header>
-      </app-header><app-profile _ngcontent-ng-c582792440 _nghost-ng-c3358521680 ngh="0">
-        <section _ngcontent-ng-c3358521680 class="profile-section container-fluid">
-          <div _ngcontent-ng-c3358521680 class="row">
-            <div _ngcontent-ng-c3358521680 class="col-md-6 section-1">
-              <div _ngcontent-ng-c3358521680 class="profile-header">
-                <h1 _ngcontent-ng-c3358521680>Viet Pham</h1>
-                <p _ngcontent-ng-c3358521680>Software Engineer</p>
+      </app-header><app-profile _ngcontent-ng-c582792440 _nghost-ng-c3119447237 ngh="0">
+        <section _ngcontent-ng-c3119447237 class="profile-section container-fluid">
+          <div _ngcontent-ng-c3119447237 class="row">
+            <div _ngcontent-ng-c3119447237 class="col-md-6 section-1">
+              <div _ngcontent-ng-c3119447237 class="profile-header">
+                <h1 _ngcontent-ng-c3119447237>Viet Pham</h1>
+                <p _ngcontent-ng-c3119447237>Software Engineer</p>
               </div>
-              <div _ngcontent-ng-c3358521680 class="profile-content">
-                <p _ngcontent-ng-c3358521680> Welcome to my profile! I'm passionate about software development and AI
+              <div _ngcontent-ng-c3119447237 class="profile-content">
+                <p _ngcontent-ng-c3119447237> Welcome to my profile! I'm passionate about software development and AI
                   tech with expertise in Java, Go, C++, Python, and more. </p>
               </div>
             </div>
-            <div _ngcontent-ng-c3358521680 class="col-md-6 section-2">
-              <div _ngcontent-ng-c3358521680 class="profile-image"><img _ngcontent-ng-c3358521680
+            <div _ngcontent-ng-c3119447237 class="col-md-6 section-2">
+              <div _ngcontent-ng-c3119447237 class="profile-image"><img _ngcontent-ng-c3119447237
                   src="./assets/me2.jpeg" alt="Your Name"></div>
             </div>
           </div>
-          <div _ngcontent-ng-c3358521680 class="worked-with">
-            <h2 _ngcontent-ng-c3358521680>Worked With</h2>
+          <div _ngcontent-ng-c3119447237 class="worked-with">
+            <h2 _ngcontent-ng-c3119447237>Worked With</h2>
           </div>
-          <div _ngcontent-ng-c3358521680 class="center-wrapper">
-            <div _ngcontent-ng-c3358521680 class="tech-stacks">
-              <div _ngcontent-ng-c3358521680>
-                <div _ngcontent-ng-c3358521680 class="content-box">
-                  <p _ngcontent-ng-c3358521680>C++</p>
+          <div _ngcontent-ng-c3119447237 class="container">
+            <div _ngcontent-ng-c3119447237 class="row justify-content-center">
+              <div _ngcontent-ng-c3119447237 class="col-md-3">
+                <div _ngcontent-ng-c3119447237 class="content-box">
+                  <p _ngcontent-ng-c3119447237>C++</p>
                 </div>
               </div>
-              <div _ngcontent-ng-c3358521680>
-                <div _ngcontent-ng-c3358521680 class="content-box">
-                  <p _ngcontent-ng-c3358521680>Golang</p>
+              <div _ngcontent-ng-c3119447237 class="col-md-3">
+                <div _ngcontent-ng-c3119447237 class="content-box">
+                  <p _ngcontent-ng-c3119447237>Golang</p>
                 </div>
               </div>
-              <div _ngcontent-ng-c3358521680>
-                <div _ngcontent-ng-c3358521680 class="content-box">
-                  <p _ngcontent-ng-c3358521680>Java</p>
+              <div _ngcontent-ng-c3119447237 class="col-md-3">
+                <div _ngcontent-ng-c3119447237 class="content-box">
+                  <p _ngcontent-ng-c3119447237>Java</p>
                 </div>
               </div>
-              <div _ngcontent-ng-c3358521680>
-                <div _ngcontent-ng-c3358521680 class="content-box">
-                  <p _ngcontent-ng-c3358521680>Python</p>
+              <div _ngcontent-ng-c3119447237 class="col-md-3">
+                <div _ngcontent-ng-c3119447237 class="content-box">
+                  <p _ngcontent-ng-c3119447237>Python</p>
                 </div>
               </div>
-              <div _ngcontent-ng-c3358521680>
-                <div _ngcontent-ng-c3358521680 class="content-box">
-                  <p _ngcontent-ng-c3358521680>SQL</p>
+              <div _ngcontent-ng-c3119447237 class="col-md-3">
+                <div _ngcontent-ng-c3119447237 class="content-box">
+                  <p _ngcontent-ng-c3119447237>SQL</p>
                 </div>
               </div>
-              <div _ngcontent-ng-c3358521680>
-                <div _ngcontent-ng-c3358521680 class="content-box">
-                  <p _ngcontent-ng-c3358521680>NoSQL</p>
+              <div _ngcontent-ng-c3119447237 class="col-md-3">
+                <div _ngcontent-ng-c3119447237 class="content-box">
+                  <p _ngcontent-ng-c3119447237>NoSQL</p>
                 </div>
               </div>
-              <div _ngcontent-ng-c3358521680>
-                <div _ngcontent-ng-c3358521680 class="content-box">
-                  <p _ngcontent-ng-c3358521680>Angular</p>
+              <div _ngcontent-ng-c3119447237 class="col-md-3">
+                <div _ngcontent-ng-c3119447237 class="content-box">
+                  <p _ngcontent-ng-c3119447237>Angular</p>
                 </div>
               </div>
-              <div _ngcontent-ng-c3358521680>
-                <div _ngcontent-ng-c3358521680 class="content-box">
-                  <p _ngcontent-ng-c3358521680>CNN Model</p>
+              <div _ngcontent-ng-c3119447237 class="col-md-3">
+                <div _ngcontent-ng-c3119447237 class="content-box">
+                  <p _ngcontent-ng-c3119447237>CNN Model</p>
                 </div>
               </div>
             </div>
@@ -493,7 +566,7 @@
         </section>
       </app-profile></router-outlet><!----></app-root>
   <script src="polyfills-LZBJRJJE.js" type="module"></script>
-  <script src="main-B2QZYAPW.js" type="module"></script>
+  <script src="main-FTGND6XJ.js" type="module"></script>
 
   <script id="ng-state" type="application/json">{"__nghData__":[{},{"c":{"0":[]}}]}</script>
 </body>

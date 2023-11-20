@@ -324,13 +324,16 @@
     }
 
     .main-header[_ngcontent-ng-c1481849533] .logo[_ngcontent-ng-c1481849533] img[_ngcontent-ng-c1481849533] {
-      margin-left: 50px;
       width: 100%;
       height: auto;
       max-width: 200px;
       max-height: 100px;
       object-fit: cover;
       margin-bottom: 20px
+    }
+
+    .main-header[_ngcontent-ng-c1481849533] .nav-menu[_ngcontent-ng-c1481849533] {
+      margin-right: 35px
     }
 
     .main-header[_ngcontent-ng-c1481849533] .nav-menu[_ngcontent-ng-c1481849533] ul[_ngcontent-ng-c1481849533] {
@@ -448,17 +451,18 @@
       flex: 1;
       min-width: 100px;
       border: 1px solid #ffffff;
-      padding: 10px;
-      text-align: center
-    }
-
-    .profile-section[_ngcontent-ng-c3119447237] .content-box[_ngcontent-ng-c3119447237] {
-      margin-bottom: 30px;
       padding: 20px 10px 10px;
-      margin-right: 30px;
+      text-align: center;
+      margin-bottom: 30px;
       font-size: 1em;
       color: #bbb;
       font-family: IBM Plex Mono, monospace
+    }
+
+    @media (max-width: 768px) {
+      .profile-section[_ngcontent-ng-c3119447237] .content-box[_ngcontent-ng-c3119447237] {
+        margin-right: 0
+      }
     }
   </style>
 </head>
@@ -566,7 +570,7 @@
         </section>
       </app-profile></router-outlet><!----></app-root>
   <script src="polyfills-LZBJRJJE.js" type="module"></script>
-  <script src="main-FTGND6XJ.js" type="module"></script>
+  <script src="main-MZ57LQEO.js" type="module"></script>
 
   <script id="ng-state" type="application/json">{"__nghData__":[{},{"c":{"0":[]}}]}</script>
 </body>
